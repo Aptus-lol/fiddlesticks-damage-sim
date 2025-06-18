@@ -142,7 +142,6 @@ def simulate_damage_over_time(combo_type, e_level, w_level, q_level, r_level,
     current_enemy_hp, total_damage_dealt = enemy_current_hp, 0.0
     time_points, damage_log, hp_log, damage_events = [], [], [], []
     
-    # --- This is your full, untouched combo logic block ---
     if combo_type == "Just Q":
         damage_events.append((round(ABILITY_DATA["Q_Terrify"]["cast_time"], 2), 'Q', q_level, is_q_feared, False))
     elif combo_type == "Just E":
